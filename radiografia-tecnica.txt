@@ -1,0 +1,33 @@
+LA RADIOGRAFÍA TÉCNICA
+Sesión 2 — E-business & E-commerce
+
+Alumno(a): Edith Ccorimanya Salazar
+Proyecto / Negocio: Elegance
+
+CUADRO COMPARATIVO
+1. Compra de productos mediante la tienda online
+   ¿E-commerce? Sí  |  ¿E-business? No
+   Justificación: Es una transacción directa de compra y venta
+
+2. Agregar productos al carrito
+   ¿E-commerce? Sí  |  ¿E-business? No
+   Justificación: Forma parte del proceso de compra online.
+
+3. Pago digital del producto
+   ¿E-commerce? Sí  |  ¿E-business? No
+   Justificación: Permite completar la compra de manera electrónica
+
+4. Registro de clientes
+   ¿E-commerce? No  |  ¿E-business? Sí
+   Justificación: Permite organizar y gestionar la información de los clientes
+
+5. Control de productos mediante la base de datos
+   ¿E-commerce? No  |  ¿E-business? Sí
+   Justificación: Ayuda a gestionar productos, precios y stock
+
+6. Gestion y seguimiento de pedidos
+   ¿E-commerce? No  |  ¿E-business? Sí
+   Justificación: Permite organizar las ventas y controlar el estado de cada pedido
+
+CONCLUSIÓN
+Elegance combina procesos de E-commerce y E-business. El E-commerce se enfoca principalmente en las compras y pagos realizados por los clientes. El E-business permite gestionar productos, clientes y pedidos de manera organizada. Ambos son importantes para mejorar el funcionamiento y crecimiento del negocio.

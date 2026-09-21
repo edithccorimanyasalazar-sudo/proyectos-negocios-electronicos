@@ -1,0 +1,41 @@
+EL PUENTE DIGITAL — REPORTE TÉCNICO
+Sesión 2 — E-business & E-commerce
+
+Alumno(a): Edith Ccorimanya Salazar
+Proyecto / Negocio: Elegance
+
+1. OBJETIVO
+Busco integrar una API de tipo de cambio para mostrar los precios de los productos de Elegance en distintos tipos de cambio de moneda. Esto permitirá que los clientes puedan conocer fácilmente el valor de los productos en otras monedas.
+
+2. API / SERVICIO EXTERNO UTILIZADO
+Nombre del servicio: ExchangeRate API
+URL / documentación: https://www.exchangerate-api.com/
+¿Requiere API key?: Sí
+Datos que entrega: {
+  "result": "success",
+  "base_code": "PEN",
+  "conversion_rates": {
+    "USD": 0.29
+  }
+}
+La API devuelve el resultado de la consulta, la moneda base (PEN) y el tipo de cambio con respecto al dólar (USD).
+
+3. ¿CÓMO SE CONECTA MI PROYECTO?
+Primero, mi proyecto utiliza fetch() para solicitar el tipo de cambio a la API. Luego, el código recibe la respuesta y extrae el valor correspondiente entre soles y dólares. Finalmente, este valor puede utilizarse para mostrar el precio convertido dentro de mi tienda online Elegance.
+
+4. FRAGMENTO DE CÓDIGO RELEVANTE
+async function obtenerTipoCambio() { const respuesta = await fetch( "https://v6.exchangerate-api.com/v6/TU_API_KEY/latest/PEN" ); const datos = await respuesta.json(); const tipoCambio = datos.conversion_rates.USD; console.log("Tipo de cambio PEN a USD:", tipoCambio); } obtenerTipoCambio();
+
+5. RESULTADO OBTENIDO
+Al ejecutar el código, la consola muestra el tipo de cambio obtenido desde la API, por ejemplo:
+
+Tipo de cambio PEN a USD: 0.29
+
+Esto demuestra que mi proyecto pudo conectarse correctamente al servicio externo y obtener información.
+(Recuerda adjuntar también tu captura de pantalla por separado.)
+
+6. APLICACIÓN AL MODELO DE NEGOCIO
+Esta integración ayuda a Elegance porque permite mostrar los precios de los productos en otra moneda. Mejora la información disponible para los clientes y facilita futuras ventas a personas que utilizan dólares. También demuestra que la tienda puede conectarse con servicios externos para mejorar sus funciones.
+
+7. CONCLUSIÓN
+Esto es E-business porque utiliza una integración tecnológica externa para mejorar y apoyar el funcionamiento del negocio. No es una venta directa, sino un servicio que aporta información adicional a la tienda online.
