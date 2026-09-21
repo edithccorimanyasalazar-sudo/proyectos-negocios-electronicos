@@ -1,0 +1,31 @@
+LOS PLANOS DE TRANSFORMACIÓN (AS-IS Y TO-BE)
+Sesión 1 — Introducción a los Negocios Electrónicos y E-business
+
+Alumno(a): Edith Ccorimanya Salazar
+Proyecto / Negocio: Elegancee
+
+1. PLANO AS-IS (ESTADO ACTUAL)
+Actores involucrados: Cliente, vendedor y redes sociales/WhatsApp
+Flujo paso a paso: 1. El cliente ve los productos en redes sociales.
+2. Consulta el precio y disponibilidad por WhatsApp.
+3. El vendedor responde y confirma el pedido.
+4. El cliente realiza el pago.
+5. El vendedor coordina la entrega.
+Punto de fricción / cuello de botella: La atención depende del vendedor y los pedidos se realizan manualmente por WhatsApp, lo que puede generar demora o pérdida de información.
+(Recuerda adjuntar también tu diagrama As-Is por separado.)
+
+2. PLANO TO-BE (ESTADO FUTURO)
+Capas / componentes de la nueva arquitectura: Capas / componentes de la nueva arquitectura:
+Cliente, tienda online, catálogo de productos, carrito de compras, base de datos, sistema de pedidos y medios de pago.
+Flujo paso a paso: 1.El cliente ingresa a la tienda online.
+2.Revisa el catálogo de productos.
+3.Agrega productos al carrito.
+4.Registra sus datos y confirma el pedido.
+5.Realiza el pago digital.
+6.El sistema registra el pedido.
+7.El vendedor prepara y coordina la entrega
+Beneficios esperados: Mayor alcance de clientes, compras disponibles las 24 horas, mejor organización de pedidos y reducción del trabajo manual.
+(Recuerda adjuntar también tu diagrama To-Be por separado.)
+
+CONCLUSIÓN
+En el estado As-Is, las ventas se realizan principalmente por redes sociales y WhatsApp de forma manual. En el estado To-Be, Elegance contará con una tienda online que permitirá gestionar productos, pedidos y pagos de manera digital. Esta transformación permitirá llegar a más clientes, mejorar la atención y organizar mejor las ventas.
