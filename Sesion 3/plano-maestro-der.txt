@@ -1,0 +1,106 @@
+EL PLANO MAESTRO DE LA MEMORIA (DER)
+Sesión 3 — Negocios y Empresas Digitales
+
+Alumno(a): Edith Ccorimanya Salazar
+Proyecto / Negocio: Joyeria Elegance
+
+ENTIDADES
+1. Producto
+   Atributos: nombre, descripcion, activo
+   PK: (vacío)  |  FK: categoria_id → Categoria
+
+2. ProductoImagen
+   Atributos: url, orden
+   PK: (vacío)  |  FK: producto_id → Producto
+
+3. Variante
+   Atributos: nombre,material,color,precio,stock,activo
+   PK: (vacío)  |  FK: producto_id → Producto
+
+4. DetallePedido
+   Atributos: nombre_producto, nombre_variante, precio_unitario, cantidad, subtotal
+   PK: (vacío)  |  FK: pedido_id → Pedido, variante_id → Variante
+
+5. Pago
+   Atributos: metodo, monto, estado, transaccion_id
+   PK: (vacío)  |  FK: pedido_id → Pedido
+
+DIAGRAMA (Mermaid)
+erDiagram
+    CATEGORIA ||--o{ PRODUCTO : clasifica
+    PRODUCTO ||--o{ VARIANTE : tiene
+    PRODUCTO ||--o{ PRODUCTO_IMAGEN : tiene
+    CLIENTE ||--o{ PEDIDO : realiza
+    PEDIDO ||--o{ DETALLE_PEDIDO : contiene
+    VARIANTE ||--o{ DETALLE_PEDIDO : "es vendida en"
+    PEDIDO ||--o{ PAGO : genera
+
+    CATEGORIA {
+        int id PK
+        string nombre
+    }
+    PRODUCTO {
+        int id PK
+        int categoria_id FK
+        string nombre
+        string descripcion
+        boolean activo
+    }
+    PRODUCTO_IMAGEN {
+        int id PK
+        int producto_id FK
+        string url
+        int orden
+    }
+    VARIANTE {
+        int id PK
+        int producto_id FK
+        string nombre
+        string material
+        string talla
+        string color
+        decimal precio
+        int stock
+        boolean activo
+    }
+    CLIENTE {
+        int id PK
+        string nombre
+        string email
+        string telefono
+        string direccion
+    }
+    PEDIDO {
+        int id PK
+        int cliente_id FK
+        string codigo
+        string direccion_entrega
+        decimal subtotal
+        decimal costo_envio
+        decimal total
+        string estado
+    }
+    DETALLE_PEDIDO {
+        int id PK
+        int pedido_id FK
+        int variante_id FK
+        string nombre_producto
+        string nombre_variante
+        decimal precio_unitario
+        int cantidad
+        decimal subtotal
+    }
+    PAGO {
+        int id PK
+        int pedido_id FK
+        string metodo
+        decimal monto
+        string estado
+        string transaccion_id
+    }
+
+RELACIÓN Y PROTECCIÓN DE DATOS
+Si borro un cliente con pedidos, la base de datos no lo permite porque quedarían pedidos sin dueño; por eso uso borrado lógico en vez de eliminar. Al borrar un pedido, sus detalles y pagos se eliminan en cascada porque no tienen sentido por separado. El dato más sensible es el pago: nunca guardo el número de tarjeta completo, solo el estado y un código de transacción que genera la pasarela.
+
+CONCLUSIÓN
+Este modelo separa bien el catálogo (producto, variante, imágenes) del proceso de venta (cliente, pedido, pago), y las llaves foráneas evitan que existan pedidos sin cliente o pagos sin pedido. Gracias a esa separación, puedo agregar una pasarela de pago real más adelante sin rediseñar toda la base de datos.

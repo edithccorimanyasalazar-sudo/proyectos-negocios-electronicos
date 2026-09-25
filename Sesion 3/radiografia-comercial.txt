@@ -1,0 +1,34 @@
+LA RADIOGRAFÍA COMERCIAL
+Sesión 3 — Negocios y Empresas Digitales (B2B, B2C, C2C)
+
+Alumno(a): Edith Ccorimanya Salazar
+Proyecto / Negocio: Joyeria elegance
+
+MODELO(S) MARCADO(S): B2C
+
+EVIDENCIA
+1. ¿Cómo se fija el precio?
+   Evidencia: Precio fijo por unidad de producto (soles), sin escalas por volumen ni cotización.
+   Modelo: B2C
+
+2. ¿Cómo se paga?
+   Evidencia: Contacto directo por WhatsApp para coordinar pago (tarjeta/transferencia personal), no hay pago corporativo.
+   Modelo: B2C
+
+3. ¿Qué tan grande es cada pedido?
+   Evidencia: Pedidos pequeños: 1 a pocas unidades por variante, uso personal o regalo.
+   Modelo: B2C
+
+4. ¿Se emite factura o boleta?
+   Evidencia: No hay módulo de facturación con RUC; el flujo apunta a boleta / venta directa, no a facturación empresarial.
+   Modelo: B2C
+
+JUSTIFICACIÓN
+Mi modelo principal es B2C, porque Joyería Elegance vende joyas directamente al consumidor final a través de un catálogo web con precios fijos por unidad, carrito de compras y coordinación del pedido por WhatsApp. No existe un flujo de cotizaciones, compras al por mayor ni facturación con RUC, que son las señales típicas de un modelo B2B; tampoco actúo como intermediario entre vendedores independientes, como en C2C, ya que todos los productos pertenecen a la misma tienda. Por ahora no convive con un modelo secundario: es un B2C puro, aunque en el futuro podría añadirse un componente B2B si se habilita venta al por mayor a revendedores.
+
+CONCLUSIÓN
+Al ser un modelo B2C, la base de datos se enfoca en el comprador individual.
+Las tablas principales son clientes, productos, variantes, pedidos y detalle_pedido.
+Cada pedido estará relacionado con un solo cliente y sus productos.
+El DER tendrá relaciones sencillas de 1 a muchos.
+No se necesitan tablas de RUC, cotizaciones, vendedores independientes ni precios por volumen.
