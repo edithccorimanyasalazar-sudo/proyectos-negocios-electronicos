@@ -1,0 +1,35 @@
+EL MAPA MAESTRO — MODELO DE NEGOCIO CANVAS
+Sesión 4 — Modelo de Negocio Canvas y Mercados Electrónicos
+
+Alumno(a): Edith Ccorimanya Salazar
+Proyecto / Negocio: Joyeria Elegance
+
+1. PROPUESTA DE VALOR
+Joyas (collares, aretes, anillos, pulseras) con variantes de medida, material y color, presentadas en un catálogo online con precios en soles y conversión de moneda en tiempo real. Compra rápida por WhatsApp sin necesidad de crear cuenta. (planeado: pago con tarjeta integrado directo en la web, asistente virtual/chatbot con respuestas automáticas).
+
+2. SEGMENTOS DE CLIENTES
+Consumidores finales (B2C) que buscan joyería para uso personal o como regalo, principalmente en Perú (por el catálogo en soles y el WhatsApp local), con posibilidad de ampliarse a otros países gracias al conversor de moneda.
+
+3. CANALES
+Sitio web propio (frontend con catálogo, carrito y grid de productos) y WhatsApp como canal de cierre de venta y atención al cliente. (planeado: pop-ups de bienvenida con descuento y prueba social para captar en el propio sitio).
+
+4. RELACIÓN CON CLIENTES
+Atención personalizada y directa por WhatsApp para coordinar pago y envío. Panel de "Mis pedidos" dentro de la misma página para que el cliente haga seguimiento sin depender de un ida y vuelta manual. (planeado: chatbot con respuestas automáticas a preguntas frecuentes).
+
+5. FUENTES DE INGRESOS
+Venta directa de joyas por unidad/variante, con costo de envío fijo cuando el pedido no supera cierto monto (envío gratis desde S/300). Pago actualmente coordinado por WhatsApp (yape, plin, transferencia, contraentrega). (planeado: cobro con tarjeta mediante pasarela sandbox/real).
+
+6. RECURSOS CLAVE
+Catálogo digital (20 productos, 3 imágenes y 3 variantes cada uno), base de datos MySQL con productos/variantes/stock, backend en Node.js/Express, imágenes propias del inventario, y el número de WhatsApp de la tienda como canal de venta.
+
+7. ACTIVIDADES CLAVE
+Gestión y actualización del catálogo (stock, precios, variantes), procesamiento de pedidos (validación de stock, cálculo de subtotal/envío/total), atención al cliente por WhatsApp, y mantenimiento del sitio web.
+
+8. SOCIOS CLAVE
+Proveedor(es) de las joyas/inventario, WhatsApp como plataforma de mensajería para ventas, y (planeado) una pasarela de pagos externa cuando se integre el cobro con tarjeta real.
+
+9. ESTRUCTURA DE COSTOS
+Costo del inventario de joyería, costo de envío asumido cuando el pedido es menor a S/300, y costos de infraestructura del sitio (hosting/base de datos). (planeado: comisión de la pasarela de pago cuando se integre tarjeta real).
+
+CONCLUSIÓN
+El bloque más débil hoy es fuente de ingresos, porque el pago todavía depende de coordinación manual por WhatsApp en vez de un cobro automatizado dentro de la web, lo que genera fricción y pedidos que quedan "pendientes" sin confirmar. Lo primero que haría para fortalecerlo es completar la integración de la pasarela de pago con tarjeta (ya con la tabla pagos lista en la base de datos), para que el pedido pase de pendiente a pagado automáticamente sin depender de un mensaje manual.

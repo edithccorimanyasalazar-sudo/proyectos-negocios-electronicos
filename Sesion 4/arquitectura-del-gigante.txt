@@ -1,0 +1,33 @@
+LA ARQUITECTURA DEL GIGANTE
+Sesión 4 — Diseño lógico de escalabilidad
+
+Alumno(a): Edith Ccorimanya Salazar
+Proyecto / Negocio: Joyeria elegance
+
+CUELLOS DE BOTELLA Y SOLUCIÓN
+1. Usuarios/clientes
+   Hoy: Sesión PHP en archivos del servidor; listas del admin sin paginar.
+   Propuesto: Sesiones en Redis o JWT; admin paginado.
+
+2. Búsqueda
+   Hoy: Se filtra en el navegador sobre todo el arreglo PRODUCTS.
+   Propuesto: Índice FULLTEXT o Meilisearch en el servidor.
+
+3. Pedidos
+   Hoy: Stock descontado sin bloqueo (riesgo de sobreventa); sin índices extra.
+   Propuesto: Transacción con FOR UPDATE, índices por cliente y estado, cola para pagos y correos.
+
+4. Interacciones
+   Hoy: El chat carga todas las FAQ y las puntua en el navegador,el resto va a  whatsapp sin historial.
+   Propuesto: Búsqueda de FAQ en el servidor, tablas conversaciones y mensajes, tickets.
+
+BENCHMARK
+Tamaño probado: Catálogo probado	2,000 productos
+Tiempo patrón actual: Patrón actual (renderizar todo)	≈ 3.05 ms
+Tiempo patrón escalable: Patrón escalable (índice + paginación)	≈ 0.013 ms
+
+DISEÑO LÓGICO PROPUESTO
+El DER de la Sesión 3 ya está bien normalizado y no cambia. Lo que se ajusta es la lógica alrededor: la API del catálogo se pagina por categoría y se agregan índices (categoria_id, activo y FULLTEXT en nombre y descripción). usuarios y clientes siguen separados y las sesiones pasan a un almacén compartido. El stock se descuenta dentro de una transacción para evitar sobreventa. Las preguntas frecuentes se consultan en el servidor y se guarda el historial de soporte en tablas nuevas.
+
+CONCLUSIÓN
+Elegance ya tiene una base sólida: productos en MySQL, API separada y DER normalizado. Su debilidad es que descarga y dibuja todo el catálogo de una vez. Con paginación, búsqueda en el servidor y stock protegido con transacciones, el costo de cada página depende de lo que se ve en pantalla y no del tamaño del catálogo.
