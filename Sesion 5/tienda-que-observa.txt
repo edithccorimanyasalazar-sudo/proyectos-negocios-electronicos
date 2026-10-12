@@ -1,0 +1,53 @@
+LA TIENDA QUE OBSERVA
+Sesión 5 — Evidencia de analítica en vivo
+
+Alumno(a): Edith Ccorimanya Salazar
+Proyecto / Negocio: Joyeria elegance
+
+1. OBJETIVO
+Saber qué piezas generan más interés y cuáles terminan en compra, para decidir qué promocionar, qué categoría reponer y si una campaña de anuncios se paga. También quiero ver dónde se pierden los clientes: ven el producto pero no lo agregan, o agregan al carrito pero no finalizan el pedido.
+
+2. EVENTOS INSTRUMENTADOS
+1. ver_producto
+   Dónde: Al abrir el detalle de un producto
+   Mide: Qué piezas atraen más miradas, para destacarlas en el carrusel.
+
+2. agregar_carrito
+   Dónde: Botón “Agregar al carrito” (addToCart)
+   Mide: Qué productos se desean, para decidir stock y promociones.
+
+3. buscar
+   Dónde: Buscador (#buscadorInput)
+   Mide: Que palabras buscan los clientes ,para mejorar productos
+
+3. EVIDENCIA
+Visitas a la tienda
+25
+Pocas visitas iniciales
+
+
+Productos vistos
+18
+Eventos de visualización
+
+
+Agregados al carrito
+4
+Acciones de interés
+
+
+Clics en WhatsApp
+3
+Posibles consultas
+(Recuerda adjuntar también tu captura de pantalla por separado.)
+
+4. APLICACIÓN AL MODELO DE NEGOCIO
+Los anillos son los productos más vistos y que los collares reciben más consultas por WhatsApp.
+- Promoción: destacaría los anillos en la página principal porque están generando interés.
+- Atención al cliente: revisaría las consultas sobre collares para identificar dudas sobre precios, materiales o diseños.
+- Mejora del catálogo: estudiaría las búsquedas que no encuentran resultados para saber qué productos podría incorporar.
+- Aumentar las visitas: compartiría la tienda en redes sociales para atraer más público y obtener datos suficientes para comparar resultados.
+
+
+5. CONCLUSIÓN
+La analítica permite que Joyería Elegance tome decisiones basadas en el comportamiento de los visitantes y no solamente en suposiciones. Al registrar las visitas, búsquedas, productos vistos y acciones en el carrito, podré comprender mejor las preferencias de los clientes y optimizar las promociones y el catálogo.
