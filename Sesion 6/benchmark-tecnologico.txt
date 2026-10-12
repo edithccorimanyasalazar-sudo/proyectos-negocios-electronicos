@@ -1,0 +1,31 @@
+EL BENCHMARK TECNOLÓGICO
+Sesión 6 — Herramientas, Análisis de Mercado y Chatbots con IA
+
+Alumno(a): Edith Ccorimanya Salazar
+Proyecto / Negocio: Joyeria Elegance
+
+CUADRO COMPARATIVO
+1. Google Analytics 4 (Analítica web)
+   Resuelve: Mide interacciones, productos vistos y acciones de compra si se configuran los eventos.
+   Costo: Disponible gratuitamente.
+   ¿La aplicarías?: Sí, para conocer qué joyas generan más interés y comparar los resultados con mi motor de analítica.
+
+2. Google Search Console (SEO y posicionamiento)
+   Resuelve: Permite conocer cómo aparece la tienda en Google y qué búsquedas llevan visitantes al sitio.
+   Costo: Gratis
+   ¿La aplicarías?: Sí, para mejorar los títulos y descripciones de mis productos y facilitar que los clientes encuentren mi tienda.
+
+3. Mercado Pago (Pagos en linea)
+   Resuelve: Permite recibir pagos digitales mediante un checkout integrado
+   Costo: Sin costo fijo de integración; cobra comisiones por pagos según las condiciones aplicables.
+   ¿La aplicarías?: Sí, cuando implemente el checkout real, para facilitar las compras y evitar depender únicamente de las consultas por WhatsApp.
+
+4. Canva (Diseño e imágenes promocionales)
+   Resuelve: Facilita crear banners, anuncios y publicaciones para promocionar joyas.
+   Costo: Plan gratuito con funciones y recursos limitados.
+   ¿La aplicarías?: Sí, para diseñar banners atractivos para la página principal y las campañas en redes sociales.
+
+CONCLUSIÓN
+La herramienta que priorizaría integrar primero en Joyería Elegance sería Google Analytics 4, porque mi proyecto está en una etapa inicial y necesito conocer cómo interactúan los visitantes con el catálogo, el buscador y el carrito. Esto me permitiría complementar la analítica propia del proyecto y tomar decisiones basadas en datos.
+
+Después mejoraría la atención mediante un chatbot y evaluaría la integración de Mercado Pago para habilitar pagos en línea. De esta manera, podría desarrollar mi tienda por etapas, empezando por medir el comportamiento de los visitantes y continuando con la mejora de la atención y el proceso de compra.

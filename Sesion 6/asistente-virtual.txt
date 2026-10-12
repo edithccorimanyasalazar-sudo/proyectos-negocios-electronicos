@@ -1,0 +1,47 @@
+EL ASISTENTE VIRTUAL EN ACCIÓN
+Sesión 6 — Chatbot incrustado en tu tienda
+
+Alumno(a): Edith Ccorimanya Salazar 
+Proyecto / Negocio: Joyeria elegance
+
+1. OBJETIVO
+El objetivo de mi asistente virtual es responder automáticamente las preguntas frecuentes de los clientes de Joyería Elegance sobre los productos, precios, disponibilidad, métodos de compra y atención por WhatsApp.
+De esta manera, los clientes pueden obtener información rápidamente sin tener que esperar siempre la respuesta de un asesor comercial. Además, el chatbot puede orientar al usuario cuando necesita información más específica o desea continuar su consulta por WhatsApp.
+
+2. BASE DE CONOCIMIENTO (FAQ)
+1. ¿Qué productos venden?
+   Claves: productos, joyas, catálogo, venden
+   Respuesta: Ofrecemos diferentes tipos de joyas y accesorios. Puedes explorar nuestro catálogo para conocer los productos disponibles.
+
+2. ¿Cuánto cuesta una joya?
+   Claves: precio, cuesta, precios, valor
+   Respuesta: Puedes consultar el precio en la información de cada producto de nuestro catálogo.
+
+3. ¿Tienen anillos disponibles?
+   Claves: anillo, anillos, disponibilidad, stock
+   Respuesta: Puedes revisar los anillos publicados en el catálogo. Para confirmar la disponibilidad de un modelo específico, consulta por WhatsApp.
+
+4. ¿Cómo puedo comunicarme con ustedes?
+   Claves: contacto, WhatsApp, asesor, consulta
+   Respuesta: Puedes comunicarte con nuestro equipo mediante el botón de WhatsApp de la tienda.
+
+3. EVIDENCIA
+Hola! Soy el asistente virtual de Joyeria Elegance. ✧
+Puedo responderte al instante sobre envios, pagos, materiales, tallas, garantia y cuidados. Elige una opcion o escribeme tu pregunta.
+que productos venden?
+Contamos con una gran seleccion de joyeria fina en plata y oro como anillos,collares,pulseras,aretes y mucho mas .
+(Recuerda adjuntar también tu captura de pantalla por separado.)
+
+4. RESULTADO DEL PANEL DE CONTROL
+Preguntas totales: Preguntas totales 20  
+Tasa de resolución:  Resolución sin derivación 75%
+
+5. APLICACIÓN AL MODELO DE NEGOCIO
+El asistente virtual de Joyería Elegance puede reducir el tiempo que el asesor comercial dedica a responder preguntas repetitivas sobre productos, precios y formas de compra. De esta manera, el asesor puede concentrarse en atender consultas más específicas, ayudar a los clientes que están cerca de realizar una compra y dar seguimiento a los pedidos.
+
+Además, las preguntas que el chatbot no pueda resolver permitirán identificar qué información falta en su base de conocimiento. Así podré mejorar progresivamente las respuestas y ofrecer una atención más rápida y organizada.
+
+6. CONCLUSIÓN
+La implementación de un asistente virtual en Joyería Elegance permite automatizar parte de la atención al cliente y facilitar el acceso a la información de los productos. Un chatbot basado en palabras clave y preguntas frecuentes puede ser útil incluso sin una API de inteligencia artificial, siempre que sus respuestas sean claras y pertinentes.
+
+En el futuro, podría ampliar su base de conocimiento e integrar herramientas adicionales para mejorar la atención. Lo más importante es comprobar que el asistente responda correctamente las preguntas frecuentes y derive a WhatsApp aquellas consultas que requieran atención personalizada.
