@@ -1,0 +1,27 @@
+EL PANEL DE CONTROL INTELIGENTE
+Sesión 7 — Evidencia del webhook y definición del proyecto
+
+Alumno(a): Edith Ccorimanya Salazar
+Proyecto / Negocio: Joyeria Elegance
+
+1. ESTADO ANTES / DESPUÉS DEL WEBHOOK
+Pedido.estado: Pendiente → Pagado
+Pago.estado: Pendiente → Pagado
+Pago.metodo/transacciónId:   tarjeta_simulada / Sin referencia → tarjeta_simulada / sim_abc123
+
+2. EVIDENCIA
+(vacío)
+(Recuerda adjuntar también tu captura de pantalla por separado.)
+
+3. APLICACIÓN AL NEGOCIO
+El proceso manual que desaparece es la actualización del estado del pedido después de verificar el pago. Ahora, el sistema puede actualizar automáticamente los registros del pedido y del pago en la base de datos, evitando tener que modificarlos manualmente.
+
+4. DEFINICIÓN RESUMIDA DEL PROYECTO E-BUSINESS
+Objetivo general: Desarrollar una tienda virtual de joyería que permita a los clientes visualizar productos, realizar pedidos y simular pagos por internet de manera sencilla y organizada.
+Alcance: Incluye el catálogo de joyas, la visualización de precios e imágenes, el carrito de compras, el registro de pedidos, la base de datos MySQL y la simulación de pagos con tarjeta.
+
+Por ahora, queda fuera la integración con una pasarela bancaria real, los cobros con dinero real y la automatización completa de procesos comerciales externos.
+Pendiente para la Sesión 8: Verificar el funcionamiento de la tienda, corregir posibles errores, comprobar el proceso completo de compra y pago, y publicar el proyecto en un servidor web para que pueda accederse por internet.
+
+5. CONCLUSIÓN
+El proyecto Elegance integra el proceso de compra con una simulación de pago y la actualización automática del estado del pedido en MySQL. Esto facilita el control de las ventas y reduce las tareas manuales. Para utilizarlo en un negocio real, será necesario integrar y verificar una pasarela de pago auténtica.

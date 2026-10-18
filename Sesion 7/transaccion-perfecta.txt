@@ -1,0 +1,60 @@
+LA TRANSACCIÓN PERFECTA
+Sesión 7 — Soluciones de Pago
+
+Alumno(a): Edith Ccorimanya Salazar
+Proyecto / Negocio: Joyeria Elegance
+
+1. PASARELA ELEGIDA: sandbox-propio
+Elegí un sandbox propio porque me permite probar el proceso de pago de mi tienda Elegance sin utilizar dinero real ni necesitar una cuenta bancaria conectada a una pasarela. De esta manera, puedo comprobar la validación del pago y el cambio de estado del pedido.
+
+2. PRUEBAS
+1. Tarjeta: 4000 0000 0000 0002
+   Esperado: Pago rechazado
+   Obtenido: Pago rechazado
+   Observación: La tarjeta fue rechazada y no se confirmó el pago.
+
+2. Tarjeta: 4000 0000 0000 9995
+   Esperado: Fondos insuficientes
+   Obtenido: Pago rechazado
+   Observación: Se mostró el mensaje de fondos insuficientes y el pedido no se confirmó.
+
+3. Tarjeta: (vacío)
+   Esperado: (vacío)
+   Obtenido: (vacío)
+   Observación: (vacío)
+
+3. CÓDIGO
+ procesar_pago_sandbox.php
+
+$estadoPago = 'confirmado';
+
+$stmt = $conn->prepare(
+    "UPDATE pagos SET estado = ? WHERE id = ?"
+);
+
+$stmt->bind_param(
+    'si',
+    $estadoPago,
+    $pedido['pago_id']
+);
+
+$stmt->execute();
+
+$estadoPedido = 'confirmado';
+
+$stmt = $conn->prepare(
+    "UPDATE pedidos SET estado = ? WHERE id = ?"
+);
+
+$stmt->bind_param(
+    'si',
+    $estadoPedido,
+    $pedidoId
+);
+
+$stmt->execute();
+
+$conn->commit();
+
+5. CONCLUSIÓN
+En mi proyecto Elegance, la automatización del pago permite que el sistema actualice los registros del pedido y del pago en la base de datos sin tener que modificarlos manualmente. Esto facilita el seguimiento de las compras y mejora la organización de la tienda virtual. Al ser un sandbox propio, el pago es simulado y no representa un cobro real.
